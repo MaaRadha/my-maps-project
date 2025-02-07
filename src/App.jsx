@@ -9,21 +9,27 @@ function App() {
   const { isAuthenticated, isLoading } = useAuth0();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (isAuthenticated) {
-      navigate("/profile");
-    }
-  }, [isAuthenticated, navigate]);
+  // useEffect(() => {
+  //   if (isAuthenticated) {
+  //     navigate("/profile");
+  //   }
+  // }, [isAuthenticated, navigate]);
 
-  if (isLoading) {
-    return <div>Loading ...</div>;
-  }
+  // if (isLoading) {
+  //   return <div>Loading ...</div>;
+  // }
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
-          <Route path="profile" element={<ProfilePage />} />
+
+          <Route
+            path="/profile"
+            element={isAuthenticated ? <ProfilePage /> : <navigate to="/" />}
+          />
+          {/* <Route path="profile" element={<ProfilePage />} /> */}
+          <Route path="*" element={<div>404 Not Found</div>} />
         </Route>
       </Routes>
     </Suspense>
