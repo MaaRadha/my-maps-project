@@ -4,6 +4,7 @@ import Layout from "../src/layout/Layout";
 import Homepage from "../src/pages/HomePage";
 import ProfilePage from "../src/pages/ProfilePage";
 import { useAuth0 } from "@auth0/auth0-react";
+
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
   const navigate = useNavigate();
