@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
+
 import "mapbox-gl/dist/mapbox-gl.css";
 
 const mapboxAccessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
-console.log("Mapbox Token:", mapboxAccessToken);
 
-const MyComponent = () => {
+const Maps = () => {
   const mapRef = useRef();
   const mapContainerRef = useRef();
 
@@ -22,13 +22,9 @@ const MyComponent = () => {
 
   return (
     <>
-      <div
-        id="map-container"
-        ref={mapContainerRef}
-        style={{ height: "100vh" }}
-      />
+      <div className="h-screen" id="map-container" ref={mapContainerRef} />
     </>
   );
 };
 
-export default MyComponent;
+export default Maps;
