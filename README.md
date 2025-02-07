@@ -23,8 +23,8 @@ npm install
 
 ## Environment Variables
 
-VITE_MAPBOX_ACCESS_TOKEN=your_mapbox_access_token
-VITE_AUTH0_DOMAIN=your_auth0_domain
-VITE_AUTH0_CLIENT_ID=your_auth0_client_id
+- VITE_MAPBOX_ACCESS_TOKEN=your_mapbox_access_token
+- VITE_AUTH0_DOMAIN=your_auth0_domain
+- VITE_AUTH0_CLIENT_ID=your_auth0_client_id
 
 npm run dev
