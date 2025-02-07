@@ -1,5 +1,11 @@
+import MyComponent from "../map/Mycomponent";
+
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  return (
+    <div>
+      <MyComponent />
+    </div>
+  );
 };
 
 export default Dashboard;
