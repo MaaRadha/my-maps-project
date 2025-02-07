@@ -28,3 +28,6 @@ npm install
 - VITE_AUTH0_CLIENT_ID=your_auth0_client_id
 
 npm run dev
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9577f0eb-98f6-41e4-a596-f4ee20ff90de/deploy-status)](https://app.netlify.com/sites/maps-e329e2/deploys)
