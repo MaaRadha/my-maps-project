@@ -1,6 +1,7 @@
 # My Maps Project
+![image](https://github.com/user-attachments/assets/767c98fc-9a7f-4818-9c3f-58f1d2581699)
 
-This project is a web application that uses Mapbox GL JS to display interactive maps. It includes authentication using Auth0 and conditional rendering of navigation links based on the user's authentication status.
+This project is a web application that uses Mapbox GL JS to display interactive maps. It includes authentication using Auth0 and conditional rendering of navigation links based on the user's authentication
 
 ## Features
 
