@@ -1,4 +1,3 @@
-import React from "react";
 import pic from "../../assets/map_1.png";
 const Home = () => {
   return (
