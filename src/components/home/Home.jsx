@@ -10,7 +10,7 @@ const Home = () => {
       </div>
       <div className="container mx-auto max-w-5xl p-8 m-2">
         <h1 className="text-6xl text-center font-bold py-4 mb-4 font-serif ">
-          Explore the World with Interactive Map
+          Explore the World with Me 🌍
         </h1>
       </div>
       <div className="container mx-auto max-w-5xl flex justify-center ">
