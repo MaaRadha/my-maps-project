@@ -16,22 +16,21 @@ const Navbar = () => {
         </div>
         <nav className="container mx-auto max-w-7xl">
           <ul className="flex space-x-6">
-            {isAuthenticated ? (
+            <li>
+              <NavLink
+                to="/"
+                className="text-md font-bold transition-colors duration-200 text-[#52b9e0] hover:text-200"
+              >
+                Home
+              </NavLink>
+            </li>
+            {isAuthenticated && (
               <li>
                 <NavLink
                   to="/profile"
                   className="text-md font-bold transition-colors duration-200 text-[#52b9e0] hover:text-200"
                 >
                   Profile
-                </NavLink>
-              </li>
-            ) : (
-              <li>
-                <NavLink
-                  to="/"
-                  className="text-md font-bold transition-colors duration-200 text-[#52b9e0] hover:text-200"
-                >
-                  Home
                 </NavLink>
               </li>
             )}
